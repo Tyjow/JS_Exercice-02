@@ -16,7 +16,10 @@ describe('Les chaines de caractères : ', function () {
         var result = concatString('Le javascript est ', 'super');
         expect(result).toEqual('Le javascript est super');
     });
-
+    it('Concatener les deux chaines de caractères', function () {
+        var result = concatString('Le javascript est ', 'super');
+        expect(result).toEqual('Le javascript est super');
+    });
     it('Afficher le cinquième caractère de la chaine', function () {
         var result = afficherCar('Ces exercices sont super!', 5);
         expect(result).toEqual('e');
@@ -48,7 +51,7 @@ describe('Les chaines de caractères : ', function () {
         var result = NombreEspaceString('Sire ouvrez on en a gros!');
         expect(result).toEqual(5);
     });
-    /*********** BONUS 
+
     it('Inverser une chaine de caractères', function () {
         var result = InverseString('Après demain, à partir d\'aujourd\'hui?');
         expect(result).toEqual('?iuh\'druojua\'d ritrap à ,niamed sèrpA');
@@ -62,7 +65,7 @@ describe('Les chaines de caractères : ', function () {
         expect(result).toEqual(19);
 
     });
-    ******************/
+
 })
 describe('Les nombres et opérations mathématiques : ', function () {
     it('Calculer la puissance d\'un nombre par rapport à un autre (x à la puissance y)', function () {
