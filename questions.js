@@ -64,7 +64,7 @@ function NombreEspaceString(str) {
 	return result;
 }
 
-//Ex1Bonus
+/*//Ex1Bonus
 function InverseString(str) {
 	var result = str.split("").reverse().join("");
 	return result;
@@ -74,15 +74,46 @@ function InverseString(str) {
 function minusculeString(str) {
 	var result = str.toLowerCase();
 	return result;
-}
 
 //Ex3Bonus
 function countDistinctCar(str) {
-	var result = str.match(/[ ]/g).length;
+	var result = str.indexOf(str);
 	alert(result);
+	
 }
 
 /**
  * Exercices sur les nombres et les caluls mathématiques
  */
 
+//Ex1 Math
+function calculPuissance(n, p) {
+	return Math.pow(n, p);
+}
+
+//Ex2 Math
+function valeurAbsolue(n) {
+	return Math.abs(n);
+}
+
+//Ex3 Math
+function valeurAbsolueArray(t) {
+	return t.map(Math.abs);
+}
+
+//Ex1Bonus Math
+function sufaceCercle(x) {
+	var pi = Math.PI;
+	return Math.round(pi * (x * x));
+}
+
+//Ex2Bonus Math
+function hypothenuse(x, y) {
+	return Math.hypot(x, y);
+}
+
+//Ex3Bonus Math
+function calculIMC(x, y) {
+	var num = x / (y * y);
+	return Number.parseFloat(num.toFixed(2));
+}
