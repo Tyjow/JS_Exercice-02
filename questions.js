@@ -64,7 +64,7 @@ function NombreEspaceString(str) {
 	return result;
 }
 
-/*//Ex1Bonus
+//Ex1Bonus
 function InverseString(str) {
 	var result = str.split("").reverse().join("");
 	return result;
@@ -74,12 +74,15 @@ function InverseString(str) {
 function minusculeString(str) {
 	var result = str.toLowerCase();
 	return result;
+}
 
 //Ex3Bonus
 function countDistinctCar(str) {
-	var result = str.indexOf(str);
-	alert(result);
-	
+	var result = str.split("").filter(function(str, i, ar) {
+		return ar.indexOf(str) === i;
+	}).join("").length;
+
+	return result;
 }
 
 /**

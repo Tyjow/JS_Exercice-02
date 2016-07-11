@@ -51,8 +51,7 @@ describe('Les chaines de caractères : ', function () {
         var result = NombreEspaceString('Sire ouvrez on en a gros!');
         expect(result).toEqual(5);
     });
-
-    /*it('Inverser une chaine de caractères', function () {
+    it('Inverser une chaine de caractères', function () {
         var result = InverseString('Après demain, à partir d\'aujourd\'hui?');
         expect(result).toEqual('?iuh\'druojua\'d ritrap à ,niamed sèrpA');
     });
@@ -60,12 +59,14 @@ describe('Les chaines de caractères : ', function () {
         var result = minusculeString('Celui ci aussi!');
         expect(result).toEqual('celui ci aussi!');
     });
-    /********* BONUS
+    
     it('Comptez le nombre de caractères différents dans la chaine', function(){
         var result = countDistinctCar('La maison de carole a vue sur le parc du Thabor');
         expect(result).toEqual(19);
 
-    });*****************/
+    });
+    /********* BONUS
+    *****************/
 
 })
 describe('Les nombres et opérations mathématiques : ', function () {
