@@ -78,9 +78,9 @@ function minusculeString(str) {
 
 //Ex3Bonus
 function countDistinctCar(str) {
-	var result = str.split("").filter(function(str, i, ar) {
-		return ar.indexOf(str) === i;
-	}).join("").length;
+	var result = str.split("").filter(function(str, i, x) {
+		return x.indexOf(str) === i;
+	}).length;
 
 	return result;
 }
